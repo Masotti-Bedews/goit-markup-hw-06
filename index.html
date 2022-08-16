@@ -400,22 +400,50 @@
              </button>
             <p class="modal-tittle">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal-form">
-            <label class="modal-label" >
-                <span>Ім'я</span>
-            <input type="text" class="modal-input" name="user-name">
+
+            <div class="modal-field">
+            <label class="modal-label"  for="user-name"> Ім'я</label>
+            <input 
+                type="text"     
+                class="modal-input" 
+                name="user-name" 
+                id="user-name">
+            </div>
+
+            <div class="modal-field">
+            <label class="modal-label" for="user-tel" >Телефон</label>   
+            <input 
+                type="tel" 
+                class="modal-input" 
+                name="user-tel" 
+                id="user-tel">
+            </div>
+
+            <div class="modal-field">
+            <label class="modal-label" for="">Пошта</label>
+            <input
+                 type="email" 
+                 class="modal-input" 
+                 name="user-email"
+                  id="user-email">
+            </div>
+
+            <div class="modal-field">
+            <label class="modal-label" for="modal-text">Коментар </label>
+            <textarea 
+                name="user-text" 
+                id="user-text" 
+                placeholder="Введіть текст" 
+                class="modal-text"></textarea>
+            </div>    
+
+            <div class="modal-field">   
+            <input type="checkbox" name="agreed" id="agreed"> 
+            <label for="agreed">
+                 Погоджуюся з розсилкою та приймаю Умови договору 
             </label>
-            <label class="modal-label" >
-                <span>Телефон</span>
-            <input type="tel" class="modal-input" name="user-tel">
-            </label>
-            <label class="modal-label">
-                <span>Пошта</span>
-            <input type="email" class="modal-input" name="user-email">
-            </label>
-            <label class="modal-label">
-                <span>Коментар</span>
-            <input type="text" class="modal-input" name="user-comment" placeholder="Введіть текст">
-       </label>
+            </div>
+      
             <button type="submit"> Відправити</button>
         </form>
         </div>
